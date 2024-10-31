@@ -1,0 +1,221 @@
+.inv-tabs {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	margin: 1em 0 2em;
+	font-weight: 300;
+}
+/* Nav */
+.inv-tabs nav {
+	text-align: left;
+}
+.inv-tabs nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: inline-block;
+}
+.inv-tabs nav ul li {
+	border: 1px solid #becbd2;
+	border-bottom: none;
+	margin: 0 0.25em;
+	display: block;
+	float: left;
+	position: relative;
+}
+.inv-tabs nav li.tab-current {
+	border: 1px solid #47a3da;
+	box-shadow: inset 0 2px #47a3da;
+	border-bottom: none;
+	z-index: 100;
+}
+.inv-tabs nav li.tab-current:before,
+.inv-tabs nav li.tab-current:after {
+	content: '';
+	position: absolute;
+	height: 1px;
+	right: 100%;
+	bottom: 0;
+	width: 1000px;
+	background: #47a3da;
+}
+.inv-tabs nav li.tab-current:after {
+	right: auto;
+	left: 100%;
+	width: 4000px;
+}
+.inv-tabs nav a {
+	color: #777;
+	display: block;
+	font-size: 1.05em;
+	line-height: 2.5;
+	padding: 0 1em;
+	white-space: nowrap; background-color:#dcdcdc;
+}
+.inv-tabs nav a:hover {
+	color: #768e9d;
+}
+.inv-tabs nav li.tab-current a {
+	color: #47a3da; background:none;
+}
+/* Icons */
+.inv-tabs nav a:before {
+	display: inline-block;
+	vertical-align: middle;
+	text-transform: none;
+	font-weight: normal;
+	font-variant: normal;
+	font-family: 'FontAwesome';
+	line-height: 1;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	margin: -0.25em 0.4em 0 0;
+}
+.icon-settings:before {
+	content: "\f013";
+}
+.icon-field:before {
+	content: "\f0ce";
+}
+.icon-message:before {
+	content: "\f0e5";
+}
+.icon-letter:before {
+	content: "\f003";
+}
+.icon-paypal:before {
+	content: "\f155";
+}
+
+
+/* Content */
+.inv-tabs-content section {
+	font-size: 1.25em;
+	padding: 0em 0em;
+	display: none;
+	margin: 10px auto 0 auto;
+}
+
+.inv-tabs-content section .innersection{	
+	padding: 0em 0em 1em 0em;	
+	margin-bottom:20px;
+}
+
+.inv-tabs-content section .inner_section{
+	background: none repeat scroll 0 0 #fff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+	padding:25px;
+}
+
+.inv-tabs-content section .inner_col1{
+	background: none repeat scroll 0 0 #fff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04); float:left;
+	padding:2.5%;
+	width: 65%;
+}
+
+.inv-tabs-content section .inner_col2{    
+	width: 25%; margin-left:2%; float:left;
+}
+
+.inv-tabs-content section .inner_col_2{	
+	background: none repeat scroll 0 0 #fff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04); float:left;
+	padding:5%;
+	width: 95%; margin-bottom:25px;
+}
+
+.inv-tabs-content section  ul{	
+	padding:0px; margin:0px;
+}
+
+.inv-tabs-content section  ul li{	
+	padding:3px 0px; font-size:15px;
+}
+
+.inner_section .4x{	
+	font-size:36px !important; line-height:40px; display:block; margin-bottom:20px;
+}
+
+
+
+.inv-tabs-content section h3 {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0px 0px 25px 0px;
+}
+
+
+.inv-tabs-content section:before,
+.inv-tabs-content section:after {
+	content: '';
+	display: table;
+}
+.inv-tabs-content section:after {
+	clear: both;
+}
+/* Fallback example */
+.no-js .inv-tabs-content section {
+	display: block;
+	padding-bottom: 2em;
+	border-bottom: 1px solid #47a3da;
+}
+.inv-tabs-content section.inv-tabs-content-current {
+	display: block;
+}
+/* Example media queries */
+@media screen and (max-width: 52.375em) {
+	.inv-tabs nav a span {
+		display: none;
+	}
+	.inv-tabs nav a:before {
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 32em) {
+	
+		
+}
+
+@media (max-width: 1024px) {
+	
+	#requiredfieldnew{overflow:auto;}
+	
+	.inv-tabs-content section .inner_col1{
+		float:none;
+		padding:2.5%;
+		width: 95%;
+	}	
+	.inv-tabs-content section .inner_col2{	
+		float:none;
+		padding:2.5%;
+		width: 95%; margin-left:0%; margin-top:20px;
+	}
+}
+@media (max-width: 768px) {
+
+	
+	.inv-tabs nav a span {
+		display: none;
+	}
+	
+	/*.inv-tabs nav ul,
+	.inv-tabs nav ul li a {
+		width: 100%;
+		padding: 0;
+	}
+	.inv-tabs nav ul li {
+		width: 10%;
+		width: calc(10% + 1px);
+		margin: 0 0 0 -1px;
+	}
+	.inv-tabs nav ul li:last-child {
+		border-right: none;
+	}*/	
+	
+}

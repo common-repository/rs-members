@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+=======================================================================
+	Modal box Bid history
+=======================================================================
+*/
+#invfade { /*--Transparent background layer--*/
+	display: none; /*--hidden by default--*/
+	background: #000000;
+	position: fixed; left: 0; top: 0;
+	width: 100%; height: 100%;
+	opacity: .3;
+	z-index: 999998;
+}
+.popup_block, .popup_block2{
+	display: none; /*--hidden by default--*/
+	background: #ffffff;	
+	font-size: 1.2em;
+	position: absolute;	
+	opacity: 0;	
+	z-index: 999999;
+	width:85%;
+	/*--CSS3 Box Shadows--*/
+	-webkit-box-shadow: 0px 0px 20px #000;
+	-moz-box-shadow: 0px 0px 20px #000;
+	box-shadow: 0px 0px 20px #000;
+	/*--CSS3 Rounded Corners--*/
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.btn_close {
+	float: right; position:relative; /*margin-top:-35px;*/
+	margin: -15px -15px 0 0;
+	height:48px; width:48px; background:url(../images/fancy_close3.png) left no-repeat;
+	cursor:pointer;
+}
+.btn_close2 {
+	float: right; position:relative; /*margin-top:-35px;*/
+	margin: -15px -15px 0 0;
+	height:48px; width:48px; background:url(../images/fancy_close2.png) left no-repeat;
+	cursor:pointer;
+}
+.thumb-text{/*padding:20px;*/ font-size:14px; overflow-y: scroll; height:410px; margin:20px;}
+
+.thumb-text h3 {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0px 12px 8px 0px !important;
+}
+
+
+
+/*--Making IE6 Understand Fixed Positioning--*/
+*html #invfade {
+	position: absolute;
+}
+*html .popup_block, *html .popup_block2 {
+	position: absolute;
+}
